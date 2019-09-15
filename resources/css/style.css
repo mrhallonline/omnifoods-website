@@ -83,25 +83,26 @@ h1 {
     border: 1px solid #b05d14;
     color: #fff;
 }
-    /***********************************/
-    /***Header***/
-    /**********************************/
 
-    header {
+/***********************************/
+/***Header***/
+/**********************************/
 
-        background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)),
-            url("../images/hero.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
+header {
 
-    }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)),
+        url("../images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 
-    .hero-text-box {
-        position: absolute;
-        width: 1140px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+}
 
-    }
+.hero-text-box {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+
+}
