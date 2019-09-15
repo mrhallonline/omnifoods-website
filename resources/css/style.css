@@ -106,20 +106,17 @@ h2:after {
 /*******************images*******************/
 
 .meal-pics {
-    width: 110%;
+    width: 120%;
    display: block;
     height: auto;
     padding: 0;
-    margin: 0 auto;
+    margin-bottom: 0 auto;
 }
 
-/* .meal-pics-2 {
-    width: 110%;
-    display: block-inline;
-    height: auto;
-    padding: 0;
+.meal-div {
+    
     margin: 0 auto;
-} */
+} 
 
 /*******************Buttons*******************/
 
@@ -225,4 +222,10 @@ header {
 .section-features {
     margin: 0;
     padding: 0;
+}
+
+.favorite {
+margin: 20px auto;
+height: 300px;
+
 }
