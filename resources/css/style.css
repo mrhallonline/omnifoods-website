@@ -1,9 +1,5 @@
 /***********************************/
-
-
 /***Basic Setup***/
-
-
 /**********************************/
 
 * {
@@ -32,36 +28,44 @@ html {
 }
 
 section {
-padding: 80px 0;
+    padding: 80px 0;
 
 }
 
 .box {
     padding: 1%;
 }
+.row-meal {
+padding: 0;
+margin: 0;
+
+}
 
 /*******************Headings*******************/
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
-   
+
 }
 
 h1 {
-margin: 0 0 20px;
-color: #fff;
-font-size: 240%;
-word-spacing: 4px;
+    margin: 0 0 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
 }
 
 h2 {
-font-size: 180%;
-word-spacing: 2px;
-text-align: center;
-margin:0 0 30px;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin: 0 0 30px;
 }
+
 h3 {
     font-size: 110%;
     margin-bottom: 15px;
@@ -71,7 +75,7 @@ h2:after {
     display: block;
     height: 2px;
     background-color: #e67e22;
-    content:" ";
+    content: " ";
     width: 100px;
     margin: 25px auto 0;
 
@@ -82,23 +86,40 @@ h2:after {
 .long-copy {
     line-height: 145%;
     width: 68%;
-    margin:0 16%;
+    margin: 0 16%;
 }
 
 .box p {
-font-size: 90%;
-line-height-step: 145%;
+    font-size: 90%;
+    line-height-step: 145%;
 }
 
 /*******************icons*******************/
 
 .icon-big {
-font-size: 350%;
-display: block;
-color: #e67e22;
-margin-bottom: 10px;
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
 }
 
+/*******************images*******************/
+
+.meal-pics {
+    width: 110%;
+   display: block;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* .meal-pics-2 {
+    width: 110%;
+    display: block-inline;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+} */
 
 /*******************Buttons*******************/
 
@@ -145,11 +166,7 @@ margin-bottom: 10px;
 
 
 /***********************************/
-
-
 /***Header***/
-
-
 /**********************************/
 
 header {
@@ -201,4 +218,11 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+}
+
+/*********************section 3*****************/
+
+.section-features {
+    margin: 0;
+    padding: 0;
 }
