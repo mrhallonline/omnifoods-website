@@ -122,6 +122,11 @@ h2:after {
     margin-right: 10px;
 }
 
+.icon-social {
+    color: #555; 
+    
+}
+
 /**************************************/
 
 
@@ -396,11 +401,7 @@ cite {
     font-size: 90%;
     margin-top: 25px;
     display: block;
-    
-    
 }
-
-
 
 cite img {
     height: 45px;
@@ -408,3 +409,68 @@ cite img {
     border-radius: 50%;
     vertical-align: middle;
 }
+
+
+/*********************footer section*****************/
+
+footer {
+    font-size: 80%;
+    padding: 50px;
+    background-color: #333;
+    color: #888;
+}
+
+footer p {
+    
+    text-align: center;
+    color: #888;
+    }
+
+footer li {
+list-style: none;
+display: inline-block;
+padding: 0px;
+margin: 5px 20px 0 0;
+font-weight: 500;
+}
+
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+text-decoration: none;
+color: #888;
+transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+color: #fff;
+}
+
+.social-links li {
+    float: right;
+    font-size: 160%;
+    color: #888
+    }
+
+.social-links a:link,
+.social-links a:visited {
+color: #888
+        
+        }
+
+.icon-social-facebook:hover {
+                    color: #3b5998;
+                }
+
+.icon-social-twitter:hover {
+                    color: #00aced;
+                }
+
+.icon-social-instagram:hover {
+                    color: #833AB4;
+                }
+
+.icon-social-reddit:hover {
+                    color: #FF4500;
+                }
