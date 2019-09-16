@@ -177,10 +177,11 @@ h2:after {
 /**********************************/
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("../images/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("hero.jpg");
     background-position: center;
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -366,22 +367,40 @@ header {
 
 /*********************testimonials section*****************/
 
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("back-customers.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 65vh;
+    color: #fff;
+    background-attachment: fixed;
+}
+
 blockquote {
     padding: 2%;
     font-style: italic;
-    line-height: 120%;
+    line-height: 145%;
     margin-top: 40px;
     position: relative;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
 }
 
 cite {
     font-size: 90%;
     margin-top: 25px;
     display: block;
-    width: 100%;
-    height: 45px;
-    font-style: italic;
+    
+    
 }
+
+
 
 cite img {
     height: 45px;
