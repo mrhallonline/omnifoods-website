@@ -152,6 +152,10 @@ h2:after {
     color: #fff;
 }
 
+.btn-app {
+
+
+}
 
 /***********************************/
 /***Section Header***/
@@ -254,15 +258,37 @@ width: 100%;
     width: 25%;
 }
 
-/* .meals-showcase img:hover {
-    transform: scale(1);
+
+/*********************steps section*****************/
+
+.steps-box {
+    
+    margin-top: 30px;
+
 }
 
-.meals-showcase img {
-    transform: scale(1.15);
-    margin: 0;
-} */
+.steps-box:first-child {
 
-.section-meals {
+    
+}
 
+.section-steps {
+width: 100%;
+display: inline-block;
+margin: 0 0;
+padding: 0 0;
+}
+
+
+.app-screen {
+display: block;
+width: 90%;
+padding: 0 0 0 50%;
+
+}
+
+.works-step {
+display: block;
+    
+    
 }
