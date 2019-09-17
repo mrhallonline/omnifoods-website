@@ -39,7 +39,7 @@ html {
 }
 
 section {
-    padding-top: 80px;
+    padding-top; 80px;
 
 }
 
@@ -123,8 +123,8 @@ h2:after {
 }
 
 .icon-social {
-    color: #555; 
-    
+    color: #555;
+
 }
 
 /**************************************/
@@ -135,7 +135,8 @@ h2:after {
 /*******************Buttons*******************/
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -146,7 +147,8 @@ h2:after {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: #e67e22;
     color: #fff;
     margin-right: 15px;
@@ -160,7 +162,9 @@ h2:after {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #b05d14;
 }
 
@@ -412,28 +416,27 @@ cite img {
 
 /*********************plans section*****************/
 .section-plans {
-background: #f4f4f4
-
+    background: #f4f4f4
 }
 
 .plan-box {
-background-color: #fff;
-border-radius: 5px;
-width: 90%;
-margin-left: 5%;
-margin-bottom: 80px;
-box-shadow: 0 2px 2px #efefef
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 80px;
+    box-shadow: 0 2px 2px #efefef
 }
 
 .plan-box div {
-padding: 15px;
-border-bottom: 1px solid #f7f5f5;
+    padding: 15px;
+    border-bottom: 1px solid #f7f5f5;
 
 }
 
 .plan-box div:last-child {
-text-align: center;
-border-bottom: 0;
+    text-align: center;
+    border-bottom: 0;
 
 }
 
@@ -442,26 +445,26 @@ border-bottom: 0;
     background-color: #fcfcfc;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    
-    }
+
+}
 
 .plan-price {
-font-size: 300%;
-margin-bottom: 10px;
-font-weight: 100;
-color: #e67e22
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22
 }
 
 .plan-price span {
-font-size: 30%;
-font-weight: 300;
+    font-size: 30%;
+    font-weight: 300;
 
 
 }
 
 .plan-price-meals {
-font-size: 80%;
-    
+    font-size: 80%;
+
 }
 
 .plan-box ul {
@@ -473,68 +476,114 @@ font-size: 80%;
     padding: 5px 0;
 }
 
+/*********************form section*****************/
 
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc,
+}
+
+textarea {
+    height: 100px;
+
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
 
 /*********************footer section*****************/
 
 footer {
-    font-size: 80%;
-    padding: 50px;
     background-color: #333;
-    color: #888;
+    padding: 60px;
+    font-size: 80%;
 }
 
-footer p {
-    
-    text-align: center;
-    color: #888;
-    }
-
-footer li {
-list-style: none;
-display: inline-block;
-padding: 0px;
-margin: 5px 20px 0 0;
-font-weight: 500;
+.footer-nav {
+    list-style: none;
+    float: left;
 }
 
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+
+}
 
 .footer-nav li a:link,
-.footer-nav li a:visited {
-text-decoration: none;
-color: #888;
-transition: color 0.2s;
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    color: #888;
+    transition: color 0.2s;
+    border: 0;
 }
 
 .footer-nav li a:hover,
 .footer-nav li a:active {
-color: #fff;
+    color: #ddd;
 }
 
-.social-links li {
-    float: right;
+.social-links li a:link,
+.social-links li a:visited {
     font-size: 160%;
-    color: #888
-    }
+}
 
-.social-links a:link,
-.social-links a:visited {
-color: #888
-        
-        }
+.icon-social-facebook,
+.icon-social-twitter,
+.icon-social-instagram,
+.icon-social-reddit {
+    transition: color 0.2s;
+
+}
+
 
 .icon-social-facebook:hover {
-                    color: #3b5998;
-                }
+    color: #3b5998;
+}
 
 .icon-social-twitter:hover {
-                    color: #00aced;
-                }
+    color: #00aced;
+}
 
 .icon-social-instagram:hover {
-                    color: #833AB4;
-                }
+    color: #833AB4;
+}
 
 .icon-social-reddit:hover {
-                    color: #FF4500;
-                }
+    color: #FF4500;
+}
+
+footer p {
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+}
