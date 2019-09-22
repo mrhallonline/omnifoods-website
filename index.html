@@ -9,48 +9,60 @@
     <meta class=icon-big name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <title>Omnifood</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
 
     <header>
-        <nav>
+        <nav >
 
-            <div class="row">
+            <div class="row" >
                 <img src="resources/images/logo-white.png" alt="Omnifood logo" class="logo">
-                <img src="resources/images/logo.png" alt="Omnifood logo" class="logo-black">
+                <a href="#top"><img src="resources/images/logo.png" alt="Omnifood logo" class="logo-black"></a>
                 
-                <ul class="main-nav">
-                    <li><a href="#">Food delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our cities</a></li>
-                    <li><a href="#">Sign-up</a></li>
+                <ul class="main-nav js--main-nav" >
+                    <li><a href="#features">Food delivery</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#cities">Our cities</a></li>
+                    <li><a href="#sign-up">Sign-up</a></li>
                 </ul>
-                
+                <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu" class='ion-navicon-round'></ion-icon></a>
+
+            
             </div>
         </nav>
-        <div class="hero-text-box">
+        <div class="hero-text-box" id="top">
             <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I’m hungry</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
         </div>
 
     </header>
 
-    <section class="section-features js--section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Get food fast &mdash; Not fast food</h2>
 
             <p class="long-copy">Hello, we're Omnifood, your new premium food delivery service. We know you're always
                 busy. No time for cooking. So let us take care of that, we're really good at it, we promise!</p>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <ion-icon class=icon-big name="infinite"></ion-icon>
                 <h3>Up to 365 days/year</h3>
@@ -145,9 +157,9 @@
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
-        <div class="row">
-            <div class="col span-1-of-2 steps-box">
-                <img src="resources/images/app-iPhone.png" alt="Omnifood app on Iphone image" class="app-screen">
+        <div class="row ">
+            <div class="col span-1-of-2 steps-box ">
+                <img src="resources/images/app-iPhone.png" alt="Omnifood app on Iphone image" class="app-screen js--wp-2">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -170,11 +182,11 @@
         </div>
     </section>
 
-    <section class="section-cities">
-        <div class="row">
+    <section class="section-cities" id="cities">
+        <div class="row ">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="row city-list">
+        <div class="row city-list js--wp-3">
             <div class="col span-1-of-4 box">
                 <img src="resources/images/lisbon-3.jpg" alt="Lisbon">
                 <h3>Lisbon</h3>
@@ -284,12 +296,12 @@
     </section>
 
 
-    <section class="section-plans">
-        <div class="row">
+    <section class="section-plans js--section-plans">
+        <div class="row ">
             <h2>Start eating healthy today</h2>
         </div>
         <div class="row">
-            <div class="col span-1-of-3">
+            <div class="col span-1-of-3 js--wp-4">
                 <div class="plan-box">
                     <div>
                         <h3>Premium</h3>
@@ -313,7 +325,7 @@
                         </ul>
                     </div>
                     <div>
-                        <a href="#" class="btn btn-full">Sign up Now</a>
+                        <a href="#" class="btn btn-full" id="sign-up">Sign up Now</a>
                     </div>
                 </div>
             </div>
